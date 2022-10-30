@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Sistema Escolar</title>
+    <link rel="stylesheet" href="crud.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="#">Controle de Pagamento</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+         <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="universidade.html">Início</a></li>
+          <li><a href="#">Professores</a></li>
+          <li><a href="#">Alunos</a></li>
+          <li><a href="cadastro_aluno.html">Cadastro Aluno</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+  
+
+    
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Pagamentos</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Adicionar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>telefone</th>
+                            <th>Pagamentos</th>
+                            <th>E-mail</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="crud.js"></script>
+    <div class="footer"><p>Direct By: Rony Inside Code 2022</p></div>
+</body>
+
+</html>
